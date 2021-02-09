@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["react", "prettier", "autofix"],
+  "rules": {
+    "semi": [2, "always"],
+    "react/prop-types": 0,
+    "autofix/no-debugger": "error",
+    "prettier/prettier": "error"
+  }
+}
