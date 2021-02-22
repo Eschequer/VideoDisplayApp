@@ -1,27 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Item from "./Components/Item";
-
-// eslint-disable-next-line no-unused-vars
-const propsValues = {
-  title: "List of Smartphones",
-  items: [
-    "HTC U Ultra",
-    "iPhone 7",
-    "Google Pixel",
-    "Huawei P9",
-    "Meizu Pro 6",
-    "Asus Zenfone 3",
-  ],
-};
+import SeasonDisplay from "./Components/SeasonDisplay/SeasonDisplay";
+/*import AprrovalCard from "./Components/Comment/ApprovalCard";
+import faker from "faker";
+import CommentDetail from "./Components/Comment/CommentDetail";*/
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <Item name={"Max"} />
+    {/*<AprrovalCard>
+      <CommentDetail
+        author="Samantha Abrique"
+        time="today at 2 p.m"
+        text="Hey there"
+        avatar={`${faker.image.people()}?random=${Math.round(
+          Math.random() * 1000
+        )}`}
+      />
+    </AprrovalCard>*/}
+    <SeasonDisplay />
   </React.StrictMode>,
   document.getElementById("root")
 );
@@ -36,4 +34,3 @@ if (module.hot) {
 reportWebVitals();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-console.dir(Item);
