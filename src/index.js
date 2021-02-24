@@ -2,22 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-/*import AprrovalCard from "./Components/Comment/ApprovalCard";
-import faker from "faker";
-import CommentDetail from "./Components/Comment/CommentDetail";*/
+import CommentApp from "./Components/Comment/CommentApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/*<AprrovalCard>
-      <CommentDetail
-        author="Samantha Abrique"
-        time="today at 2 p.m"
-        text="Hey there"
-        avatar={`${faker.image.people()}?random=${Math.round(
-          Math.random() * 1000
-        )}`}
-      />
-    </AprrovalCard>*/}
+    <CommentApp />
   </React.StrictMode>,
   document.getElementById("root")
 );

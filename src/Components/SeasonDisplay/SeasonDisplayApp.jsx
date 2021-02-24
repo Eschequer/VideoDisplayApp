@@ -2,7 +2,7 @@ import React from "react";
 import Season from "./Season";
 import Loader from "./Loader";
 
-export default class SeasonDisplay extends React.Component {
+export default class SeasonDisplayApp extends React.Component {
   constructor(props) {
     super(props);
 
