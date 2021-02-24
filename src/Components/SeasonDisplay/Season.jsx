@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./Season.module.css";
 
 const seasonConfig = {
   winter: {
@@ -24,10 +25,10 @@ export default function Season(props) {
   const { text, icon } = seasonConfig[season];
 
   return (
-    <div className="container ui" style={{ padding: "10px" }}>
-      <i className={`${icon} icon huge iconLeft`} />
+    <div className={`${style[season]} ${style.season}`}>
+      <i className={`${icon} icon huge ${style.iconLeft}`} />
       <h1>{text}</h1>
-      <i className={`${icon} icon huge iconRight`} />
+      <i className={`${icon} icon huge ${style.iconRight}`} />
     </div>
   );
 }

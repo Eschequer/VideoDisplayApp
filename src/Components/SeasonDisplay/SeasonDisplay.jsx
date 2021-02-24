@@ -1,5 +1,6 @@
 import React from "react";
 import Season from "./Season";
+import Loader from "./Loader";
 
 export default class SeasonDisplay extends React.Component {
   constructor(props) {
@@ -13,24 +14,21 @@ export default class SeasonDisplay extends React.Component {
       (position) => this.setState({ latitude: position.coords.latitude }),
       (error) => this.setState({ errorMessage: error.message })
     );
-
-    console.log(`Component did mount`);
   }
 
-  render() {
+  renderContent() {
     if (this.state.errorMessage && !this.state.latitude) {
       return <div>Error: {this.state.errorMessage}</div>;
     }
 
     if (!this.state.errorMessage && this.state.latitude) {
-      return (
-        <div>
-          Latitude: {this.state.latitude}
-          <Season latitude={this.state.latitude} />
-        </div>
-      );
+      return <Season latitude={this.state.latitude} />;
     }
 
-    return <div>Loading!</div>;
+    return <Loader message="Please accept location request" />;
+  }
+
+  render() {
+    return this.renderContent();
   }
 }

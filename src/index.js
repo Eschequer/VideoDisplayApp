@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import SeasonDisplay from "./Components/SeasonDisplay/SeasonDisplay";
 /*import AprrovalCard from "./Components/Comment/ApprovalCard";
 import faker from "faker";
 import CommentDetail from "./Components/Comment/CommentDetail";*/
@@ -19,7 +18,6 @@ ReactDOM.render(
         )}`}
       />
     </AprrovalCard>*/}
-    <SeasonDisplay />
   </React.StrictMode>,
   document.getElementById("root")
 );
