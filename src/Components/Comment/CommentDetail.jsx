@@ -1,12 +1,12 @@
 import React from "react";
-/*import faker from "faker";*/
+// eslint-disable-next-line no-unused-vars
 
 export default function CommentDetail(props) {
   return (
     <div className="ui comments">
       <div className="comment">
         <a className="avatar">
-          <img src={props.avatar} alt="avatar" />
+          <img src={props.avatar} alt="avatar" className="border" />
         </a>
         <div className="content">
           <a className="author">{props.author}</a>

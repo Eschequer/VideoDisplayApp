@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import CommentApp from "./Components/Comment/CommentApp";
+import ImagesDisplayApp from "./Components/ImagesDisplay/ImagesDisplayApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <CommentApp />
+    <ImagesDisplayApp />
   </React.StrictMode>,
   document.getElementById("root")
 );
