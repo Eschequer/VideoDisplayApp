@@ -10,7 +10,7 @@ export default class SearchBar extends React.Component {
   handleFormSubmit = (e) => {
     e.preventDefault();
 
-    this.props.onSubmit(this.state.term);
+    this.props.onTermSubmit(this.state.term);
   };
 
   render() {
@@ -18,7 +18,7 @@ export default class SearchBar extends React.Component {
       <div className="ui segment">
         <form className="ui form" onSubmit={this.handleFormSubmit}>
           <div className="field">
-            <label htmlFor="searchBar">Image Search</label>
+            <label htmlFor="searchBar">Video Search</label>
             <input
               type="text"
               name="first-name"
