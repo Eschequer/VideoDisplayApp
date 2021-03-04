@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import youtube from "../../api/youtube";
-import SearchBar from "./SearchBar";
-import VideoList from "./VideoList";
-import VideoDetail from "./VideoDetail";
+import youtube from "./api/youtube";
+import SearchBar from "./Components/VideoDisplay/SearchBar";
+import VideoList from "./Components/VideoDisplay/VideoList";
+import VideoDetail from "./Components/VideoDisplay/VideoDetail";
 
-class VideoDisplayApp extends Component {
+class App extends Component {
   state = { videos: [], selectedVideo: null };
 
   handleTermSubmit = async (term) => {
@@ -49,4 +49,4 @@ class VideoDisplayApp extends Component {
   }
 }
 
-export default VideoDisplayApp;
+export default App;
